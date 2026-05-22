@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tu Nombre — Diseñador</title>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;700;800&family=Instrument+Serif:ital@0;1&family=Montserrat:wght@700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<nav>
+  <!-- EDITAR: tu nombre -->
+  <a href="#" class="logo" style="display:flex;align-items:center;gap:14px"><img src="images/img01.png" alt="Marcos Madero" style="width:110px;height:110px;border-radius:4px;object-fit:cover;object-position:center top;display:block">Marcos Madero</a>
+  <div class="nav-r">
+    <a href="#skills">Skills</a>
+    <a href="#works">Trabajos</a>
+    <a href="#contact">Contacto</a>
+    <span class="nav-dot"></span>
+  </div>
+</nav>
+
+<div class="hero">
+  <div class="hero-left">
+    <!-- EDITAR: tu ciudad / especialidad -->
+    <p class="hero-tag reveal">Diseñador — Buenos Aires</p>
+    <div class="hero-title reveal d1">
+      <em>Diseño</em>
+      que transforma<br>desde el<br>detalle.
+    </div>
+    <div class="hero-bottom reveal d2">
+      <p class="hero-desc">Diseño gráfico, branding e identidad visual. Motion Graphics y Modelado 3D.</p>
+      <a href="#works" class="hero-cta">Ver trabajos →</a>
+    </div>
+  </div>
+  <div class="hero-right">
+    <span class="scene-num">3D / 001</span>
+    <div class="scene">
+      <div class="cube">
+        <div class="face f-front">
+          <div class="face-inner">
+            <svg width="80" height="80" viewBox="0 0 80 80" fill="none">
+              <circle cx="40" cy="40" r="28" stroke="rgba(26,26,255,0.5)" stroke-width="0.8"/>
+              <circle cx="40" cy="40" r="2" fill="rgba(26,26,255,0.7)"/>
+              <line x1="0" y1="40" x2="80" y2="40" stroke="rgba(255,255,255,0.06)" stroke-width="0.5"/>
+              <line x1="40" y1="0" x2="40" y2="80" stroke="rgba(255,255,255,0.06)" stroke-width="0.5"/>
+            </svg>
+          </div>
+        </div>
+        <div class="face f-back">
+          <div class="face-inner">
+            <svg width="80" height="80" viewBox="0 0 80 80" fill="none">
+              <rect x="20" y="20" width="40" height="40" stroke="rgba(255,255,255,0.1)" stroke-width="0.8" fill="none"/>
+            </svg>
+          </div>
+        </div>
+        <div class="face f-left"></div>
+        <div class="face f-right"></div>
+        <div class="face f-top">
+          <div class="face-inner">
+            <svg width="80" height="80" viewBox="0 0 80 80" fill="none">
+              <polygon points="40,10 70,65 10,65" stroke="rgba(255,255,255,0.08)" stroke-width="0.8" fill="none"/>
+            </svg>
+          </div>
+        </div>
+        <div class="face f-bottom"></div>
+      </div>
+    </div>
+    <span class="scene-label">CSS 3D · Live</span>
+  </div>
+</div>
+
+<div id="skills" style="padding:64px 6vw 48px;border-top:1px solid var(--line);border-bottom:1px solid var(--line);display:flex;align-items:flex-end;justify-content:space-between;gap:32px;flex-wrap:wrap">
+  <div class="reveal">
+    <p style="font-size:11px;letter-spacing:0.18em;text-transform:uppercase;color:var(--muted);margin-bottom:16px">Especialidades</p>
+    <h2 style="font-family:var(--serif);font-style:italic;font-size:clamp(44px,6vw,80px);line-height:1;letter-spacing:-0.02em;font-weight:400">Lo que<br>sé hacer.</h2>
+  </div>
+  <p class="reveal d1" style="font-size:15px;color:var(--muted);line-height:1.75;max-width:340px;padding-bottom:6px">Tres disciplinas que pueden integrarse según el proyecto.</p>
+</div>
+
+<div class="bento">
+
+  <div class="cell c-wide reveal">
+    <p class="cell-label">Skill 01 — Motion Graphics</p>
+    <h2 class="cell-title">Animaciones con<br>impacto visual.</h2>
+    <p class="cell-body">Animaciones, transiciones y motion design para marca y contenido digital.</p>
+    <div style="width:100%;height:160px;margin-top:28px;position:relative;overflow:hidden">
+      <canvas id="mc" style="position:absolute;inset:0;width:100%;height:100%"></canvas>
+    </div>
+  </div>
+
+  <div class="cell c-mid reveal d1">
+    <p class="cell-label">Skill 02 — Diseño 3D</p>
+    <h2 class="cell-title">Volumen, forma<br>y textura.</h2>
+    <p class="cell-body">Modelado, render y composición tridimensional con criterio gráfico.</p>
+    <div class="mini-scene">
+      <div class="mini-cube">
+        <div class="mf mf-front"></div>
+        <div class="mf mf-back"></div>
+        <div class="mf mf-left"></div>
+        <div class="mf mf-right"></div>
+        <div class="mf mf-top"></div>
+        <div class="mf mf-bottom"></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="cell c-full reveal d2">
+    <p class="cell-label">Skill 03 — Diseño Gráfico &amp; Branding</p>
+    <h2 class="cell-title">El concepto antes que la idea.</h2>
+    <div class="poster" style="aspect-ratio:5/1.4">
+      <div class="poster-grid-bg"></div>
+      <p class="poster-line">Tipografía · Composición · Sistema · Identidad · Forma ·</p>
+      <p class="poster-line-2">JERARQUÍA · RITMO · CONTRASTE · MARCA · COLOR · LAYOUT ·</p>
+      <div class="poster-dot"></div>
+    </div>
+  </div>
+
+</div>
+
+<div id="works" style="border-bottom:1px solid var(--line)">
+  <div class="works-header reveal">
+    <p class="section-label">Trabajos seleccionados</p>
+  </div>
+  <div class="works-list">
+
+    <!-- PROYECTO 1 -->
+    <div class="work-item reveal">
+      <span class="work-num">01</span>
+      <div class="work-info">
+        <div class="work-name">Branding — Blanck Designwear</div>
+        <div class="work-sub">Identidad visual completa para marca de indumentaria.</div>
+        <div class="work-thumb">
+          <img src="images/img02.jpg" alt="Branding Blanck Designwear" style="width:100%;display:block">
+        </div>
+      </div>
+      <span class="work-tag">Branding</span>
+      <span class="work-year">2024</span>
+    </div>
+
+    <!-- PROYECTO 2 -->
+    <div class="work-item reveal d1">
+      <span class="work-num">02</span>
+      <div class="work-info">
+        <div class="work-name">Animacion de producto — VodderLab</div>
+        <div class="work-sub"><a href="https://www.instagram.com/p/DR2j1mOD5UH/" target="_blank" style="color:var(--accent);text-decoration:none;font-size:13px">Ver en Instagram →</a></div>
+        <div class="work-thumb">
+          <div style="display:flex;gap:4px;overflow-x:auto;scroll-snap-type:x mandatory;-webkit-overflow-scrolling:touch;padding-bottom:4px">
+            <div style="flex:0 0 280px;scroll-snap-align:start"><img src="images/img03.png" style="width:100%;display:block"></div><div style="flex:0 0 280px;scroll-snap-align:start"><img src="images/img04.png" style="width:100%;display:block"></div><div style="flex:0 0 280px;scroll-snap-align:start"><img src="images/img05.png" style="width:100%;display:block"></div><div style="flex:0 0 280px;scroll-snap-align:start"><img src="images/img06.png" style="width:100%;display:block"></div><div style="flex:0 0 280px;scroll-snap-align:start"><img src="images/img07.png" style="width:100%;display:block"></div><div style="flex:0 0 280px;scroll-snap-align:start"><img src="images/img08.png" style="width:100%;display:block"></div>
+          </div>
+        </div>
+      </div>
+      <span class="work-tag">Motion</span>
+      <span class="work-year">2023</span>
+    </div>
+
+    <!-- PROYECTO 3 -->
+    <div class="work-item reveal d2">
+      <span class="work-num">03</span>
+      <div class="work-info">
+        <div class="work-name">Nombre del proyecto</div>
+        <div class="work-sub">Descripción breve del trabajo.</div>
+        <div class="work-thumb">
+          <div class="thumb-placeholder">Agregá tu imagen aquí</div>
+        </div>
+      </div>
+      <span class="work-tag">Diseño 3D</span>
+      <span class="work-year">2023</span>
+    </div>
+
+  </div>
+</div>
+
+<div id="contact" class="contact">
+  <p class="contact-pre reveal">Disponible para proyectos</p>
+  <div class="contact-big reveal d1">
+    <strong>Hablemos</strong>
+    de tu idea.
+  </div>
+  <div class="contact-links reveal d2">
+    <a href="mailto:marcosmadero0@gmail.com" class="link-pill a" style="font-family:'Montserrat',sans-serif;font-size:15px;letter-spacing:0.02em;font-weight:700">marcosmadero0@gmail.com</a>
+  </div>
+</div>
+
+<footer>
+  <span>Marcos Madero — Buenos Aires</span>
+  <span>© 2024</span>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
