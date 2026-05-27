@@ -81,8 +81,8 @@ nav a:hover{color:var(--ink)}
 .work-sub{font-size:13px;color:var(--muted)}
 .work-tag{font-size:11px;letter-spacing:0.1em;text-transform:uppercase;color:var(--muted);border:1px solid var(--line);padding:6px 14px;white-space:nowrap;align-self:start}
 .work-year{font-size:12px;color:var(--muted);white-space:nowrap;align-self:start;padding-top:4px}
-.work-thumb{width:100%;margin-top:16px;overflow:hidden;max-height:0;transition:max-height 0.5s ease}
-.work-item:hover .work-thumb{max-height:340px}
+.work-thumb{width:100%;margin-top:16px;overflow:hidden;max-height:0;transition:max-height 0.6s ease}
+.work-item:hover .work-thumb{max-height:1200px}
 .thumb-placeholder{background:var(--line);height:280px;display:flex;align-items:center;justify-content:center;font-size:11px;letter-spacing:0.12em;text-transform:uppercase;color:var(--muted)}
 
 .contact{padding:140px 6vw;text-align:center;border-top:1px solid var(--line)}
